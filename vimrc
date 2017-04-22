@@ -26,7 +26,7 @@ nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd VimEnter * wincmd p
+" autocmd VimEnter * wincmd p
 
 let NERDTreeShowHidden=1
 nmap <leader>n :NERDTreeToggle<CR>
@@ -34,3 +34,12 @@ nmap <leader>j :NERDTreeFind<CR>
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp', '\.idea']
 
 set clipboard=unnamed
+" treat <li> and <p> tags like block tags they are
+let g:html_indent_tags = 'li\|p'
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
