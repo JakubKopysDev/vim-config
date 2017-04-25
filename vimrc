@@ -1,6 +1,7 @@
-execute pathogen#infect()
-" syntax on
+call pathogen#infect()
+syntax on
 filetype plugin indent on
+
 filetype on
 syntax enable
 set background=dark
@@ -10,7 +11,7 @@ set number
 set hidden
 set history=100
 
-" filetype indent on
+filetype indent on
 set nowrap
 set tabstop=2
 set shiftwidth=2
