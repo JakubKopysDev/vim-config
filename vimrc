@@ -5,6 +5,7 @@ filetype plugin indent on
 filetype on
 syntax enable
 set background=dark
+let g:solarized_termcolors=256 "this is what fixed it for me
 colorscheme solarized
 set number
 
