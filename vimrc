@@ -2,6 +2,7 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
+<<<<<<< HEAD
 " Solarized color scheme
 " filetype on
 " syntax enable
@@ -12,6 +13,14 @@ filetype plugin indent on
 syntax on
  set t_Co=256
  colorscheme railscasts
+=======
+filetype on
+syntax enable
+set background=dark
+let g:solarized_termcolors=256 "this is what fixed it for me
+colorscheme solarized
+set number
+>>>>>>> cea6eb233336a608049f32133eacedb75ac65c40
 
 " display line numbers
 set number
