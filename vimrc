@@ -7,12 +7,13 @@ syntax enable
 set background=dark
 let g:solarized_termcolors=256 "this is what fixed it for me
 colorscheme solarized
-set number
 
 set hidden
 set history=100
 
-filetype indent on
+set number  " show line numbers
+filetype indent on " load filetype-specific intend files
+set showcmd " show command in bottom bar
 set nowrap
 set tabstop=2
 set shiftwidth=2
