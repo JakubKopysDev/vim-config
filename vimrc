@@ -53,6 +53,8 @@ set paste                      " paste without indentations
 
 set ruler                      " show cursor position
 
+nnoremap <esc> :noh<return><esc> " Cancel last search using Esc key
+
 " remove whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
