@@ -2,7 +2,6 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
-<<<<<<< HEAD
 " Solarized color scheme
 " filetype on
 " syntax enable
@@ -13,16 +12,13 @@ filetype plugin indent on
 syntax on
  set t_Co=256
  colorscheme railscasts
-=======
 filetype on
 syntax enable
 set background=dark
 let g:solarized_termcolors=256 "this is what fixed it for me
 colorscheme solarized
-<<<<<<< HEAD
-=======
+
 set number
->>>>>>> cea6eb233336a608049f32133eacedb75ac65c40
 
 " display line numbers
 set number
@@ -30,7 +26,7 @@ set number
 
 filetype indent on
 set whichwrap=b,s,<,>,h,l      " those keys can exceed linebreaks
->>>>>>> d7aec7c02672c69d42cc10af258258c2423e8b2c
+
 set tabstop=2
 set shiftwidth=2
 set expandtab
