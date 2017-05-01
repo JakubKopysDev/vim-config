@@ -2,25 +2,19 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
-<<<<<<< HEAD
 " Solarized color scheme
 " filetype on
 " syntax enable
 " set background=dark
 " colorscheme solarized
 "
-" Railscasts colorscheme config
-syntax on
- set t_Co=256
- colorscheme railscasts
-=======
-filetype on
-syntax enable
-set background=dark
-let g:solarized_termcolors=256 "this is what fixed it for me
-colorscheme solarized
+
+" filetype on
+" syntax enable
+" set background=dark
+" let g:solarized_termcolors=256 "this is what fixed it for me
+" colorscheme solarized
 set number
->>>>>>> cea6eb233336a608049f32133eacedb75ac65c40
 
 " display line numbers
 set number
@@ -96,4 +90,9 @@ let g:lightline = {
       \ }
 
 " no transparent bg using vim
-let g:solarized_termtrans = 0
+" let g:solarized_termtrans = 0
+
+" Railscasts colorscheme config
+syntax on
+ set t_Co=256
+ colorscheme railscasts
