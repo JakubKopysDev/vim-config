@@ -2,25 +2,13 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
-" Solarized color scheme
-" filetype on
-" syntax enable
-" set background=dark
-" colorscheme solarized
-"
-
-" filetype on
-" syntax enable
-" set background=dark
-" let g:solarized_termcolors=256 "this is what fixed it for me
-" colorscheme solarized
-set number
-
 " display line numbers
 set number
 
+
 filetype indent on
 set whichwrap=b,s,<,>,h,l      " those keys can exceed linebreaks
+
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -46,6 +34,8 @@ set display+=lastline          " show incomplete paragraphes
 set paste                      " paste without indentations
 
 set ruler                      " show cursor position
+
+nnoremap <esc> :noh<return><esc> " Cancel last search using Esc key
 
 " remove whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
